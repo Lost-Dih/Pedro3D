@@ -529,6 +529,7 @@ GameObject:
   - component: {fileID: 1004887221}
   - component: {fileID: 1004887220}
   - component: {fileID: 1004887219}
+  - component: {fileID: 1004887223}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -622,6 +623,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1004887223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1004887218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 540fae54723433d4f84ca2ac7fb4cdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIOverlapChecker
+  imageA: {fileID: 35959927}
+  imageB: {fileID: 2139105661}
+  attachKey: 101
 --- !u!1 &1230700137
 GameObject:
   m_ObjectHideFlags: 0
@@ -848,7 +864,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChangeRawImageTexture
   rawImage: {fileID: 1601742911}
-  newTexture: {fileID: 2800000, guid: 664fe941011ba064b9763c5b5b0c15e1, type: 3}
+  textures:
+  - {fileID: 2800000, guid: 664fe941011ba064b9763c5b5b0c15e1, type: 3}
+  - {fileID: 2800000, guid: d995af607824f7c49956fe778e400422, type: 3}
+  - {fileID: 2800000, guid: 664fe941011ba064b9763c5b5b0c15e1, type: 3}
+  - {fileID: 2800000, guid: d995af607824f7c49956fe778e400422, type: 3}
+  button: {fileID: 1315532174}
 --- !u!1 &1348364378
 GameObject:
   m_ObjectHideFlags: 0
