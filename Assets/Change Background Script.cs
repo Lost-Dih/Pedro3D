@@ -6,7 +6,7 @@ public class ChangeRawImageTexture : MonoBehaviour
     public RawImage rawImage;      // Assign in Inspector
     public Texture[] textures;     // Add multiple textures in Inspector
     public GameObject button;      // Assign your button here
-    
+    public GameObject BuildMode;
 
     private int currentIndex = -1;
 
@@ -23,7 +23,7 @@ public class ChangeRawImageTexture : MonoBehaviour
             // Destroy the button
             if (button != null)
                 Destroy(button);
-    
+            BuildMode.SetActive(true);
             return;
         }
 
