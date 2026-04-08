@@ -12,7 +12,7 @@ public class ChangeRawImageTexture : MonoBehaviour
 
     public void ChangeTexture()
     {
-        if (rawImage == null || textures.Length == 0)
+        if (rawImage == null) //|| textures.Length == 0)
             return;
 
         currentIndex++;
