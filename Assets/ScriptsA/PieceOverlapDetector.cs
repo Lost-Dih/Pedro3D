@@ -5,13 +5,17 @@ public class UIOverlapAndParent : MonoBehaviour
     public RectTransform imageA;
     public RectTransform imageB;
 
-    public KeyCode attachKey = KeyCode.E;
 
-    void Update()
+
+    public void TryAttach()
     {
-        if (IsOverlapping(imageA, imageB) && Input.GetKeyDown(attachKey))
+        if (IsOverlapping(imageA, imageB))
         {
             AttachBToA();
+        }
+        else
+        {
+            Debug.Log("Not overlapping");
         }
     }
 
