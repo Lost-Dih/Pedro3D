@@ -1450,7 +1450,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &898793226
 Transform:
   m_ObjectHideFlags: 0
@@ -1753,9 +1753,8 @@ GameObject:
   - component: {fileID: 1098044864}
   - component: {fileID: 1098044863}
   - component: {fileID: 1098044862}
-  - component: {fileID: 1098044861}
-  - component: {fileID: 1098044860}
   - component: {fileID: 1098044866}
+  - component: {fileID: 1098044867}
   m_Layer: 5
   m_Name: Talk Button
   m_TagString: Untagged
@@ -1763,39 +1762,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &1098044860
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1098044859}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7350425b3de58844aa2a4cc6c1bef39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ChangeRawImageTexture2
-  rawImage: {fileID: 2090580292}
-  textures:
-  - {fileID: 2800000, guid: 81a80c9cf6e5897418a74467fb70dacf, type: 3}
-  button: {fileID: 1098044859}
-  BuildMode: {fileID: 1380223751}
---- !u!114 &1098044861
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1098044859}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58d8eb0c87945994ab9cbe617a27ae20, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FirstTalkButtonScript
-  rawImage: {fileID: 2090580292}
-  button: {fileID: 1098044859}
-  textures: {fileID: 2800000, guid: 81a80c9cf6e5897418a74467fb70dacf, type: 3}
-  ArrowButton: {fileID: 1380223751}
 --- !u!114 &1098044862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1840,9 +1806,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1098044860}
-        m_TargetAssemblyTypeName: ChangeRawImageTexture2, Assembly-CSharp
-        m_MethodName: ChangeTexture
+      - m_Target: {fileID: 1098044867}
+        m_TargetAssemblyTypeName: CheckDeletedObjects, Assembly-CSharp
+        m_MethodName: OnButtonPressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1941,6 +1907,26 @@ MonoBehaviour:
   objectsToDisable:
   - {fileID: 898793225}
   - {fileID: 1818334084}
+--- !u!114 &1098044867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1098044859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84e9e8a69fb8cad42a929d26836677e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CheckDeletedObjects
+  trackedObjects:
+  - {fileID: 420468498}
+  - {fileID: 1693759598}
+  - {fileID: 2012291712}
+  enableIf1: []
+  disableIf1: []
+  enableIf2: []
+  disableIf2: []
 --- !u!1 &1160170254
 GameObject:
   m_ObjectHideFlags: 0
@@ -4049,7 +4035,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1818334085
 Transform:
   m_ObjectHideFlags: 0
@@ -4085,7 +4071,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1823062268
 Transform:
   m_ObjectHideFlags: 0
