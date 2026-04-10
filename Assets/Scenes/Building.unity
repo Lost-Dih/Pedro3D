@@ -1348,7 +1348,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &720989663
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1365,7 +1365,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 289, y: 21}
+  m_AnchoredPosition: {x: 837, y: 138}
   m_SizeDelta: {x: 423.7363, y: 195.6591}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &720989664
@@ -2160,9 +2160,13 @@ MonoBehaviour:
   textures: []
   objectsToDisable:
   - {fileID: 1226071817}
+  - {fileID: 1994289521}
+  - {fileID: 1332783321}
   objectsToEnable:
   - {fileID: 1823062267}
   - {fileID: 1781262500}
+  - {fileID: 720989662}
+  - {fileID: 1332783321}
 --- !u!1 &967230400
 GameObject:
   m_ObjectHideFlags: 0
@@ -3284,7 +3288,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1332783322
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3301,7 +3305,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1695.3108, y: 122}
+  m_AnchoredPosition: {x: 1695.3108, y: 538}
   m_SizeDelta: {x: 170.6664, y: 359.0496}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1332783323
