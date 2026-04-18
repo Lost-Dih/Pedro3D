@@ -1,27 +1,22 @@
 using UnityEngine;
 using UnityEngine.UI;
-public class ColourButtonSelection : MonoBehaviour
+
+public class PieceSelector : MonoBehaviour
 {
-    public static ColourButtonSelection lastSelected; // keeps track of last clicked image
-    private Image imageComponent;
+    public static PieceSelector selectedPiece;
 
-    void Awake()
+    void Start()
     {
-        imageComponent = GetComponent<Image>();
+        GetComponent<Button>().onClick.AddListener(OnPieceClick);
     }
 
-    // Call this method on click
-    public void OnClick()
+    void OnPieceClick()
     {
-        lastSelected = this;
+        selectedPiece = this;
     }
 
-    // Change color of this image
-    public void SetColor(Color newColor)
+    public void ChangeToSprite(Sprite newSprite)
     {
-        if (imageComponent != null)
-        {
-            imageComponent.color = newColor;
-        }
+        GetComponent<Image>().sprite = newSprite;
     }
 }

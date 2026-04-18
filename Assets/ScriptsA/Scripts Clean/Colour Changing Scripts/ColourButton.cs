@@ -1,15 +1,17 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ColorButton : MonoBehaviour
+public class Piece : MonoBehaviour
 {
-    public Color buttonColor; // set this in the inspector
+    public Sprite redSprite, yellowSprite, blueSprite;
+    public static Piece selected;
 
-    public void ChangeSelectedColor()
+    void Start()
     {
-        if (ColourButtonSelection.lastSelected != null)
-        {
-            ColourButtonSelection.lastSelected.SetColor(buttonColor);
-        }
+        GetComponent<Button>().onClick.AddListener(() => selected = this);
     }
+
+    public void SetRed() { GetComponent<Image>().sprite = redSprite; }
+    public void SetYellow() { GetComponent<Image>().sprite = yellowSprite; }
+    public void SetBlue() { GetComponent<Image>().sprite = blueSprite; }
 }
